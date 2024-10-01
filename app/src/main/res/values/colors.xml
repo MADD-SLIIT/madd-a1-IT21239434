@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="light_green">#D6EC8C</color>
+    <color name="dark_green">#2E9F82</color>
+
+    <color name="cat_bg">#F0F0F0</color>
+    <color name="cat_txt">#7E7E7E</color>
+
+    <color name="ash">#F7F7F9</color>
+
+    <color name="forest">#4db25a</color>
+    <color name="weather">#2499db</color>
+    <color name="mountains">#9b8c64</color>
+
+</resources>

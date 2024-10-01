@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "938880180318",
+    "project_id": "geolearn-31c8b",
+    "storage_bucket": "geolearn-31c8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938880180318:android:468dcdfaf58bfed24394cf",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6ZNE9agGq5x6z9rzxVngKmCUks6Z7_Lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

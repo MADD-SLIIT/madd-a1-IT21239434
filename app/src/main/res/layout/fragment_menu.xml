@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/menu_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.MenuFragment">
+
+   <!-- <ImageView
+        android:id="@+id/meni_bck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/bck_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/menu_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/menu"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/peron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_head" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peron"
+        app:layout_constraintVertical_bias="0.142">
+
+        <Button
+            android:id="@+id/myprofile"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/my_profile"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/my_profile"
+            android:drawableRight="@drawable/sp_1_nxt"
+
+            />
+
+        <Button
+            android:id="@+id/quesBookmark"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/question_bookmark"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/sp_1_nxt"
+            android:drawableLeft="@drawable/flag1"
+            />
+
+
+        <Button
+            android:id="@+id/language"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/language"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/sp_1_nxt"
+            android:drawableLeft="@drawable/language"
+             />
+
+
+        <Button
+            android:id="@+id/bookmark"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/bookmark"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/sp_1_nxt"
+            android:drawableLeft="@drawable/not_bookmark"
+            />
+
+
+        <Button
+            android:id="@+id/privacy"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/priacy"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/sp_1_nxt"
+            android:drawableLeft="@drawable/privacy"
+            />
+
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/help"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/sp_1_nxt"
+            android:drawableLeft="@drawable/help"
+             />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/share"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/sp_1_nxt"
+            android:drawableLeft="@drawable/share"
+            />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/log_out"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/log_out"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

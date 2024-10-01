@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">PROJECT</string>
+    <string name="logo">logo</string>
+
+    <!--spash screen-->
+    <string name="btn_text">LET\'S GET STARTED</string>
+
+    <!--splash screen 1-->
+    <string name="sp_1_dec_txt">Your Online Geography Learning Platform</string>
+
+    <!--splash screen 2-->
+    <string name="sp_2_dec_txt">"Geography is not just about maps and places; It's about understanding the world and our place in it. "</string>
+
+    <!--select screen-->
+    <string name="slct_signup">SIGN UP</string>
+    <string name="slct_signin">SIGN IN</string>
+
+
+    <!--Sign Up screen-->
+    <string name="Sign_up_head">Become a Member</string>
+    <string name="signup_username">UserName</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_password">Password</string>
+    <string name="other_signup">or Sign Up with</string>
+    <string name="signup_have_acc">Already have an Account ?</string>
+    <string name="signup_Re_password">Confirm Password</string>
+    <string name="phone">Phone</string>
+
+
+    <!--Sign In screen-->
+    <string name="Sign_in_head">Welcome Back !</string>
+    <string name="signin_email">Email</string>
+    <string name="signin_password">Password</string>
+    <string name="other_signin">or Sign In with</string>
+    <string name="signin_have_acc">Don\'t have an Account ?</string>
+    <string name="signin_forget_pw">Forget Password</string>
+    <string name="slct_bg_img">slct_bg_img\n</string>
+
+
+    <!--card view -->
+    <string name="card_tpc_head">Atmosphere</string>
+    <string name="card_tpc_sub_head">Learn about Earth Atmosphere</string>
+    <string name="crd_review">4.8 (225 Reviews)</string>
+    <string name="card_hours">6 Hours</string>
+    <string name="subscribe">Subscribe</string>
+
+
+    <!-- home -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_nv">Home</string>
+    <string name="topics_nv">Topics</string>
+    <string name="notes_nv">Notes</string>
+    <string name="menu_nv">Menu</string>
+    <string name="Home_user_name">Hello</string>
+    <string name="home_slogan">Welcome to the Geo learn</string>
+    <string name="Home_categoy_head">Categories</string>
+    <string name="seeAll_btn">View All</string>
+    <string name="currently_follow">Currently Follow</string>
+    <string name="most_popular_courses">Most Popular Courses</string>
+
+    <!--topic -->
+    <string name="topic1hd">Topic</string>
+    <string name="topidesc">Welcome to topic page, select your topic \nto study</string>
+
+
+    <!--described topic -->
+    <string name="topic2">topic</string>
+    <string name="subtopic2">sub topic</string>
+    <string name="topic_description">Description</string>
+    <string name="descriptions">descriptions</string>
+    <string name="images">Image</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="start_quiz">Start Quiz</string>
+
+    <!--Quiz-->
+    <string name="quiz_question">Question</string>
+    <string name="quiz">Quiz</string>
+    <string name="choice_1">Choice 1</string>
+    <string name="choice_2">Choice 2</string>
+    <string name="choice_3">Choice 3</string>
+    <string name="choice_4">Choice 4</string>
+    <string name="quiz_submit_answer">Submit Answer</string>
+    <string name="quiz_next_question">Next Question</string>
+
+
+    <!--Notes-->
+    <string name="note_done">Done</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="note_crd_description">note_crd_description</string>
+    <string name="head_notes">Notes</string>
+    <string name="sub_note">Take Your Own Notes</string>
+
+    <string name="edit_note">Edit Note</string>
+    <string name="edit_save">Save</string>
+
+    <!--menu-->
+    <string name="menu">MENU</string>
+    <string name="my_profile">My Profile</string>
+    <string name="question_bookmark">Question Bookmark</string>
+    <string name="language">Language</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="priacy">Privacy and Terms</string>
+    <string name="help">Help Center</string>
+    <string name="share">Share</string>
+    <string name="log_out">Log Out</string>
+
+    <!--view profile-->
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="my_profile_1">MY PROFILE</string>
+    <string name="nametxt">Nametxt</string>
+    <string name="phonetxt">Phonetxt</string>
+    <string name="emailtxt">Emailtxt</string>
+
+    <!--update profile-->
+    <string name="Update">Update Profile</string>
+    <string name="edtphonenumber">Edit Phone Number</string>
+    <string name="edtemail">Edit Email</string>
+    <string name="edt_name">Edit Name</string>
+    <string name="edit_my_profile">Edit My Profile</string>
+    <string name="edtpassword">Edit Password</string>
+
+    <!--Delete profile-->
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_pg_description">Do You want to delete your account Permanently ?</string>
+    <string name="delete_account_btn">DELETE ACCOUNT</string>
+
+
+    <!--admin -->
+    <string name="admin_home">ADMIN HOME</string>
+    <string name="add_topic">Add Topic</string>
+    <string name="view_topic">View Topic</string>
+    <string name="admin_log_out">Log Out</string>
+
+    <!--admin add Topic-->
+    <string name="adminAddtopic_name">Topic name</string>
+    <string name="AdminAdd_topic_description">Topic Description</string>
+    <string name="AdminAdd_hours">Hours</string>
+    <string name="AdminAdd_image">Upload Image</string>
+    <string name="AdminAdd_imagebtn">Select Image</string>
+    <string name="AdminAdd_description">Description</string>
+    <string name="Adminadd_topic">Add Topic</string>
+
+    <!--admin view Topic-->
+    <string name="adminvwtopic_name">Topic name</string>
+    <string name="Adminvw_topic_description">Topic Description</string>
+    <string name="Adminvw_hours">Hours</string>
+    <string name="Adminvw_image">Image</string>
+    <string name="Adminvw_description">Description</string>
+    <string name="Adminvwdelete_topic">Delete Topic</string>
+    <string name="Adminvwedit_topic">Edit Topic</string>
+    <string name="sp1desctxt2">We are the world\'s leading platform for up-to-date geography education.</string>
+
+
+</resources>

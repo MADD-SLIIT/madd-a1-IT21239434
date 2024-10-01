@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".fragments.HomeFragment">
+
+    <ImageView
+        android:id="@+id/home_bg"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vec_3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/homeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Home_user_name"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/homeSlogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/home_slogan"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeUser" />
+
+    <ScrollView
+        android:id="@+id/home_scl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_bg">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Home">
+
+            <LinearLayout
+                android:id="@+id/cat_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/home_scl"
+                tools:ignore="MissingConstraints,NotSibling">
+
+                <TextView
+                    android:id="@+id/homeCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/Home_categoy_head"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/home_bg" />
+
+                <Button
+                    android:id="@+id/seeallbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/seeAll_btn"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="197dp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/cat_det_scr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cat_head"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/cat_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cat_btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/cat_bg"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Forests"
+                        android:textColor="@color/cat_txt"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/cat_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/cat_bg"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Weather"
+                        android:textColor="@color/cat_txt"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/cat_btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/cat_bg"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Mountains"
+                        android:textColor="@color/cat_txt"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/most_pop_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cat_det_scr"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/Most_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/most_popular_courses"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/homeSlogan" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/most_pop_frag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/topic_card_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/ash"
+                        android:outlineAmbientShadowColor="@color/light_green"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:id="@+id/tpc_head"
+                                android:layout_width="wrap_content"
+                                android:layout_height="31dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/card_tpc_head"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tpc_sub"
+                                android:layout_width="217dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tpc_head"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="144dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/card_tpc_sub_head"
+                                android:textColor="@color/cat_txt"
+                                android:textSize="12sp" />
+
+                            <ImageButton
+                                android:id="@+id/Not_bookmark"
+                                android:layout_width="57dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="295dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="19dp"
+                                android:backgroundTint="@color/white"
+                                android:src="@drawable/not_bookmark" />
+
+                            <TextView
+                                android:id="@+id/tpc_hours"
+                                android:layout_width="95dp"
+                                android:layout_height="16dp"
+                                android:layout_below="@+id/Not_bookmark"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="263dp"
+                                android:layout_marginTop="17dp"
+                                android:layout_marginEnd="18dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/card_hours"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                            <Button
+                                android:id="@+id/subsc_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@id/topic_card_1"
+                                android:layout_below="@+id/tpc_sub"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/dark_green"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/subscribe"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                tools:ignore="NotSibling" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cur_flow_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/most_pop_con"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/cur_flow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/currently_follow"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/homeSlogan" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/most_cur_flow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/topic_card_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/ash"
+                        android:outlineAmbientShadowColor="@color/light_green"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:id="@+id/tpc_headd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="31dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/card_tpc_head"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tpc_subb"
+                                android:layout_width="217dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tpc_headd"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="144dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/card_tpc_sub_head"
+                                android:textColor="@color/cat_txt"
+                                android:textSize="12sp" />
+
+                            <ImageButton
+                                android:id="@+id/Not_bookmarkk"
+                                android:layout_width="57dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="295dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="19dp"
+                                android:backgroundTint="@color/white"
+                                android:src="@drawable/not_bookmark" />
+
+                            <TextView
+                                android:id="@+id/tpc_hourss"
+                                android:layout_width="95dp"
+                                android:layout_height="16dp"
+                                android:layout_below="@+id/Not_bookmarkk"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="263dp"
+                                android:layout_marginTop="17dp"
+                                android:layout_marginEnd="18dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/card_hours"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                            <Button
+                                android:id="@+id/subsc_btnn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@id/topic_card_1"
+                                android:layout_below="@+id/tpc_subb"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/dark_green"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/subscribe"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                tools:ignore="NotSibling" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
